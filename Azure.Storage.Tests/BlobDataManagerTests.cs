@@ -8,8 +8,7 @@ namespace Azure.Storage.Tests
     public class BlobDataManagerTests
     {
         private const string ContainerName = "test-container";
-        //private const string ConnectionString = "UseDevelopmentStorage=true";
-        private const string ConnectionString = "DefaultEndpointsProtocol=https;AccountName=daaacn2col0metricacc;AccountKey=AYu1zfTXzPrA1ipItSFCv2xYoDa2QHkoEyz2qJHmLrnB7lZH7PqHrFRE4ZTGFW1EgX23aEloT74tNeINGewckQ==";
+        private const string ConnectionString = "UseDevelopmentStorage=true";
 
         private IBlobDataManager blobDataManager;
 
