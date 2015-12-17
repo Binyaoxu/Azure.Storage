@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.Storage", "Azure.Storage\Azure.Storage.csproj", "{28144736-3CAD-4E4B-AE9D-4D198C50DF3B}"
 EndProject
@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.Storage.Portable.Test
 	ProjectSection(ProjectDependencies) = postProject
 		{67F9D3A8-F71E-4428-913F-C37AE82CDB24} = {67F9D3A8-F71E-4428-913F-C37AE82CDB24}
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHook", "TestHook\TestHook.csproj", "{4BAB96F8-8166-44F7-BAA5-2A4764DDE398}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{929CD654-2627-406A-BA58-E1097CCA2151}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{929CD654-2627-406A-BA58-E1097CCA2151}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{929CD654-2627-406A-BA58-E1097CCA2151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BAB96F8-8166-44F7-BAA5-2A4764DDE398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BAB96F8-8166-44F7-BAA5-2A4764DDE398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BAB96F8-8166-44F7-BAA5-2A4764DDE398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BAB96F8-8166-44F7-BAA5-2A4764DDE398}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -10,8 +10,10 @@ namespace Azure.Storage.Tests
 {
     public class BlobStorageAsyncTests : IDisposable
     {
-        private const string ContainerName = "test-container";
-        private const string ConnectionString = "UseDevelopmentStorage=true";
+        //private const string ContainerName = "test-container";
+        private const string ContainerName = "201511231000";
+        //private const string ConnectionString = "UseDevelopmentStorage=true";
+        private const string ConnectionString = "DefaultEndpointsProtocol=https;AccountName=daaacn2col0metricacc;AccountKey=AYu1zfTXzPrA1ipItSFCv2xYoDa2QHkoEyz2qJHmLrnB7lZH7PqHrFRE4ZTGFW1EgX23aEloT74tNeINGewckQ==";
         private readonly IBlobStorageAsync blobStorage;
 
         public BlobStorageAsyncTests()
@@ -30,7 +32,7 @@ namespace Azure.Storage.Tests
         public async Task CreateBlobFromSreamAsyncSucceeds()
         {
             const string streamBlob = "streamblob";
-            var bytes = Encoding.UTF8.GetBytes("hello world");
+            var bytes = Encoding.UTF8.GetBytes("hello world ABC");
             var stream = new MemoryStream(bytes);
             var result = await blobStorage.CreateBlockBlobAsync(streamBlob, "text/plain", stream);
 

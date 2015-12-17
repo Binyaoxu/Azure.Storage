@@ -8,7 +8,8 @@ namespace Azure.Storage.Tests
     public class BlobDataManagerTests
     {
         private const string ContainerName = "test-container";
-        private const string ConnectionString = "UseDevelopmentStorage=true";
+        //private const string ConnectionString = "UseDevelopmentStorage=true";
+
         private IBlobDataManager blobDataManager;
 
         [Fact]
@@ -17,7 +18,7 @@ namespace Azure.Storage.Tests
             blobDataManager = new BlobDataManager();
             var options = new BlobOptions
             {
-                BlobName = "testBlob",
+                BlobName = "SampleData.txt",
                 BlobType = BlobType.BlockBlob,
                 ConnectionString = ConnectionString,
                 ContainerName = ContainerName,
